@@ -2,25 +2,16 @@ import React from "react";
 import Button from "./components/inputs/Button";
 
 function App() {
-  const Alert=()=>{
-    alert("this is a button");
-  }
   return (
     <div className="App">
-      <Button
-        title="click me"
-        type="submit"
-        buttonColor="btn btn-success"
-        onClick={Alert}
-      />
-      <Button
-        title="ok"
-        type="submit" 
-        buttonColor="btn btn-danger ml-5" />
-
-      <Button title="ok"
-       type="submit"
-        buttonColor="btn btn-warning ml-5" />
+      <Button title="success" color="success" disabled={true} />
+      <Button title="danger" color="danger" />
+      <Button title="info" color="info" />
+      <Button title="secondary" color="secondary" disabled={true} />
+      <Button title="spinner" color="danger" loading={true} />
+      <Button title="spinner" color="secondary" loading={true} />
+      <Button title="primary" disabled={true} />
+      <Button title="warning" color="warning" loading={true} />
     </div>
   );
 }
